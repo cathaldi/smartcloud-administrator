@@ -1,0 +1,2 @@
+include bssapi/datapool/English/*.csv
+include bssapi/json/*.json

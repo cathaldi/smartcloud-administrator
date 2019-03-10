@@ -1,0 +1,13 @@
+{{
+  "Order": {{
+    "OrderItemSet": [
+      {{
+        "DurationUnits": "{duration_units}",
+        "DurationLength": {duration_length},
+        "PartNumber": "{part_number}",
+        "PartQuantity": {part_quantity}
+      }}
+    ],
+    "CustomerId": {customer_id}
+  }}
+}}

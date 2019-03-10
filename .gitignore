@@ -1,0 +1,10 @@
+venv/
+bss-api/Lib
+bss-api/Scripts
+.idea/
+bss-api/models/__pycache__
+utils/__pycache__
+__pycache__/
+pyvenv.cfg
+pip-selfcheck.json
+bss_api.iml

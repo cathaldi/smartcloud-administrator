@@ -1,0 +1,25 @@
+{{
+  "Subscriber": {{
+    "CustomerId": "{customer_id}",
+    "Person": {{
+      "RoleSet": [
+        "{role_set}"
+      ],
+      "FamilyName": "{family_name}",
+      "GivenName": "{given_name}",
+      "EmailAddress": "{email_address}",
+      "NamePrefix": "{name_prefix}",
+      "NameSuffix": "{name_suffix}",
+      "EmployeeNumber": "{employee_number}",
+      "LanguagePreference": "{language_preference}",
+      "WorkPhone": "{work_phone}",
+      "MobilePhone": "{mobile_phone}",
+      "HomePhone": "{home_phone}",
+      "Fax": "{fax}",
+      "JobTitle": "{job_title}",
+      "WebSiteAddress": "{website_address}",
+      "TimeZone": "{time_zone}",
+      "Photo": "{photo}"
+    }}
+  }}
+}}

@@ -1,0 +1,43 @@
+{{
+  "Customer" : {{
+    "Organization" : {{
+      "OrgName" : "{org_name}",
+      "Phone" : "{phone}",
+      "AddressSet" : [{{
+        "AddressLine1" : "{address_line_1}",
+        "AddressLine2" : "{address_line_2}",
+        "AddressType" : "{address_type}",
+        "City" : "{city}",
+        "Country" : "{country}",
+        "PostalCode" : "{postal_code}",
+        "State" : "{state}"
+      }}
+      ],
+      "Contact" : {{
+        "FamilyName" : "{contact_family_name}",
+        "GivenName" : "{contact_given_name}",
+        "EmailAddress" : "{contact_email_address}",
+        "NamePrefix" : "{name_prefix}",
+        "EmployeeNumber" : "{employee_number}",
+        "LanguagePreference" : "{language_preference}",
+        "WorkPhone" : "{work_phone}",
+        "MobilePhone" : "{mobile_phone}",
+        "HomePhone" : "{home_phone}",
+        "Fax" : "{fax}",
+        "JobTitle" : "{job_title}",
+        "WebSiteAddress" : "{website_address}",
+        "TimeZone" : "{time_zone}",
+        "Photo" : ""
+      }}}},
+      "CustomerAccountSet" :  [{{
+        "AccountNumber" : "0000123456",
+        "LocationName" : "Westford Lab",
+        "PaymentMethodType" : "INVOICE",
+        "CurrencyType" : "USD"
+    }}],
+      "CustomerIdentifierSet" :  [{{
+        "Value" : "9999999999",
+        "CustomerIdType" : "IBM_CUSTOMER_NUMBER"
+    }}]
+  }}
+}}
