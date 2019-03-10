@@ -5,14 +5,14 @@ Install through pip
 
 .. code-block:: python
 
-   pip install smartcloud-admin-api
+   pip install smartcloudadmin
 
 Retrieving an Organization
 
 .. code-block:: python
 
-    from bssapi import Organization
-    from bssapi.bss_config import BssConfig
+    from smartcloudadmin import Organization
+    from smartcloudadmin.bss_config import BssConfig
 
     # Provide North American data center details and supply user credentials
     config = BssConfig()
@@ -25,7 +25,7 @@ Entitle a user with a subscription
 
 .. code-block:: python
 
-    from bssapi import Subscriber
+    from smartcloudadmin import Subscriber
     # Get user from id
     new_subscriber = Subscriber.get("NA", 222222)
     # Or alternatively through email address

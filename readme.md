@@ -1,10 +1,10 @@
-# SmartCloud-admin-api
+# SmartCloud Administrator
 
 An unofficial python api for helping to administer with IBM Smartcloud
 which supports products like Connections, Sametime and Notes.
 
 ## Setup
-    pip install smartcloud-admin-api
+    pip install smartcloudadmin
 
 
 ## Getting Started
@@ -12,8 +12,8 @@ which supports products like Connections, Sametime and Notes.
 ### Config
 Define datacenter credentials 
 
-    from bssapi import Organization
-    from bssapi.bss_config import BssConfig
+    from smartcloudadmin import Organization
+    from smartcloudadmin.bss_config import BssConfig
 
     # Provide North American data center details and supply user credentials
     config = BssConfig()
