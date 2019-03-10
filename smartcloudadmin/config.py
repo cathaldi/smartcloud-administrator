@@ -5,24 +5,10 @@ class BssConfig:
 
     log_level = logging.ERROR
 
-    default_environment = "SP1"
+    default_environment = ""
 
     verify_ssl = True
 
-    datacenters = {
-        "SP1": {
-            "url": "https://apps.collabservsvtperf1.com",
-            "auth": ('None', 'None')
-        },
-        "IR3": {
-            "url": "https://apps.scniris.com",
-            "auth": ('None', 'None')
-        },
-        "I1": {
-            "url": "https://apps.collabservintegration.com",
-            "auth": ('None', 'None')
-        }
-    }
 
     def add_datacenter(self, env_name: str, env_url: str, env_username_password: (str, str)):
         """

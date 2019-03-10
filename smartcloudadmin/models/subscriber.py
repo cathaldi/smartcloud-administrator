@@ -1,13 +1,13 @@
 import bssapi.http_requests as bss_api
 
-from bssapi.models.seat import Seat
-import bssapi.enums as bss_enums
-from bssapi.utils.json_constructor import register_subscriber_json, set_one_time_password_json,\
+from smartcloudadmin.models.seat import Seat
+import smartcloudadmin.enums as bss_enums
+from smartcloudadmin.utils.json_constructor import register_subscriber_json, set_one_time_password_json,\
     set_user_password_json, change_password_json
-from bssapi.utils.qol import parse_time
+from smartcloudadmin.utils.qol import parse_time
 from datetime import datetime
 import logging
-from bssapi.config import BssConfig
+from smartcloudadmin.config import BssConfig
 
 logging.basicConfig(level=BssConfig.log_level)
 logger = logging.getLogger(__name__)

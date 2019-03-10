@@ -1,7 +1,7 @@
 Organizations
 -------------
 
-.. automodule:: bssapi.models.organization
+.. automodule:: smartcloudadmin.models.organization
     :members:
     :undoc-members:
     :show-inheritance:

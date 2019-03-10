@@ -1,7 +1,7 @@
 Exceptions
 ==========
 
-.. automodule:: bssapi.models.exceptions
+.. automodule:: smartcloudadmin.models.exceptions
     :members:
     :undoc-members:
     :show-inheritance:

@@ -1,7 +1,7 @@
 Enums
 =====
 
-.. automodule:: bssapi.enums
+.. automodule:: smartcloudadmin.enums
     :members:
     :undoc-members:
     :show-inheritance:

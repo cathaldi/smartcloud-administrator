@@ -1,7 +1,7 @@
 Seats
 =====
 
-.. automodule:: bssapi.models.seat
+.. automodule:: smartcloudadmin.models.seat
     :members:
     :undoc-members:
     :show-inheritance:

@@ -1,6 +1,6 @@
 import requests
-from bssapi.config import BssConfig
-from bssapi.exceptions import BssServerError, BssResourceNotFound, BSSBadData
+from smartcloudadmin.config import BssConfig
+from smartcloudadmin.exceptions import BssServerError, BssResourceNotFound, BSSBadData
 
 import logging
 

@@ -1,7 +1,7 @@
 from datetime import datetime
-from bssapi.enums import SecurityRealm
+from smartcloudadmin.enums import SecurityRealm
 import logging
-from bssapi.config import BssConfig
+from smartcloudadmin.config import BssConfig
 
 logging.basicConfig(level=BssConfig.log_level)
 logger = logging.getLogger(__name__)

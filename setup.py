@@ -1,14 +1,14 @@
 from setuptools import setup
 
 setup(
-    name='bssapi',
-    version='0.6',
-    packages=['bssapi', 'bssapi.utils', 'bssapi.models'],
+    name='smartcloudadmin',
+    version='0.7',
+    packages=['smartcloudadmin', 'smartcloudadmin.utils', 'smartcloudadmin.models'],
     url='cathal.com',
     include_package_data=True,
     license='apache2',
-    author='CDinn',
-    #install_requires=['requests']
-    author_email='test@email.com',
+    author='Cathal A. Dinneen',
+    install_requires=['requests'],
+    author_email='cathal.a.dinneen@gmail.com',
     description=''
 )

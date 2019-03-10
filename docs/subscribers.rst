@@ -1,7 +1,7 @@
 Subscriber
 ----------
 
-.. automodule:: bssapi.models.subscriber
+.. automodule:: smartcloudadmin.models.subscriber
     :members:
     :undoc-members:
     :show-inheritance:

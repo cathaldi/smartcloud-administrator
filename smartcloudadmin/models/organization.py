@@ -4,17 +4,17 @@ import operator
 import logging
 from typing import List, Dict
 
-from bssapi.utils.json_constructor import register_customer_json
-from bssapi.models.subscription import Subscription
-from bssapi.models.subscriber import Subscriber
-from bssapi.models.address_set import AddressSet
-from bssapi.models.contact import Contact
+from smartcloudadmin.utils.json_constructor import register_customer_json
+from smartcloudadmin.models.subscription import Subscription
+from smartcloudadmin.models.subscriber import Subscriber
+from smartcloudadmin.models.address_set import AddressSet
+from smartcloudadmin.models.contact import Contact
 
-import bssapi.enums as bss_enums
-from bssapi.utils.qol import parse_time
+import smartcloudadmin.enums as bss_enums
+from smartcloudadmin.utils.qol import parse_time
 from datetime import datetime
 
-from bssapi.config import BssConfig
+from smartcloudadmin.config import BssConfig
 
 logging.basicConfig(level=BssConfig.log_level)
 logger = logging.getLogger(__name__)

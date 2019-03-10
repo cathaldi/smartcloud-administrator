@@ -1,7 +1,7 @@
 Address Set
 ===========
 
-.. automodule:: bssapi.models.address_set
+.. automodule:: smartcloudadmin.models.address_set
     :members:
     :undoc-members:
     :show-inheritance:

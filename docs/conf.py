@@ -19,7 +19,7 @@ sys.path.insert(0, os.path.abspath('../'))
 
 # -- Project information -----------------------------------------------------
 
-project = 'bss_api'
+project = 'Smart Cloud Administrator'
 copyright = '2019, Cathal A. Dinneen'
 author = 'Cathal A, Dinneen'
 

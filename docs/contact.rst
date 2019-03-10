@@ -1,7 +1,7 @@
 Contact
 =======
 
-.. automodule:: bssapi.models.contact
+.. automodule:: smartcloudadmin.models.contact
     :members:
     :undoc-members:
     :show-inheritance:

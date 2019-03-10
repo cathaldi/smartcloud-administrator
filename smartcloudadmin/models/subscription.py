@@ -1,10 +1,10 @@
-import bssapi.http_requests as bss_api
-from bssapi.utils.json_constructor import register_subscription_json
-from bssapi.enums import State
-from bssapi.utils.qol import parse_time
+import smartcloudadmin.http_requests as bss_api
+from smartcloudadmin.utils.json_constructor import register_subscription_json
+from smartcloudadmin.enums import State
+from smartcloudadmin.utils.qol import parse_time
 from datetime import datetime
 import logging
-from bssapi.config import BssConfig
+from smartcloudadmin.config import BssConfig
 
 
 logging.basicConfig(level=BssConfig.log_level)
