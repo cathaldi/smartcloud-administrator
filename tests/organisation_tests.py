@@ -1,14 +1,14 @@
-from bssapi.models.organization import Organization
-from bssapi.models.subscription import Subscription
-from bssapi.models.subscriber import Subscriber
-from bssapi.utils.generators import given_name,family_name,email_address
-from bssapi.exceptions import BssResourceNotFound, BSSBadData
+from smartcloudadmin.models.organization import Organization
+from smartcloudadmin.models.subscription import Subscription
+from smartcloudadmin.models.subscriber import Subscriber
+from smartcloudadmin.utils.generators import given_name,family_name,email_address
+from smartcloudadmin.exceptions import BssResourceNotFound, BSSBadData
 import unittest
-from bssapi.enums import State
+from smartcloudadmin.enums import State
 from time import sleep
 from random import randint
 import os
-from bssapi.config import BssConfig
+from smartcloudadmin.config import BssConfig
 
 ##### This block ensures tests run in order.
 def cmp(a, b):

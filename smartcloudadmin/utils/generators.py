@@ -48,7 +48,6 @@ def phone_number():
 
 
 def address_line_1(script="English"):
-    print(os.path.dirname(os.path.abspath(__file__)))
     resource_package = __name__  # Could be any module/package name
     resource_path = '/'.join((f'../datapool/{script}', 'address_line_1.csv'))  # Do not use os.path.join(), see below
 

@@ -1,4 +1,4 @@
-import bssapi.http_requests as bss_api
+import smartcloudadmin.http_requests as bss_api
 import textwrap
 import operator
 import logging

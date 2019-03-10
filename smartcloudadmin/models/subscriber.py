@@ -1,4 +1,4 @@
-import bssapi.http_requests as bss_api
+import smartcloudadmin.http_requests as bss_api
 
 from smartcloudadmin.models.seat import Seat
 import smartcloudadmin.enums as bss_enums
@@ -166,7 +166,6 @@ class Subscriber:
         """
         body = register_subscriber_json(customer_id=organization_id, org_name=org_name,email_address=email_address,
                                         given_name=given_name, family_name=family_name,**kwargs)
-        print(body)
         resp = bss_api.create_subscriber(environment, body)
 
         subscriber = cls(environment)

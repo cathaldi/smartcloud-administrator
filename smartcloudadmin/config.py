@@ -9,6 +9,7 @@ class BssConfig:
 
     verify_ssl = True
 
+    datacenters = {}
 
     def add_datacenter(self, env_name: str, env_url: str, env_username_password: (str, str)):
         """
@@ -19,6 +20,7 @@ class BssConfig:
             "url": f"{env_url}",
             "auth": env_username_password
         }
+
 
 
 

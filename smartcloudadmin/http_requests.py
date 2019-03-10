@@ -235,8 +235,6 @@ def delete_subscription(environment, subscription_id):
 
 
 def transfer_subscription_seat(environment, current_subscription_id, seat_id, target_subscription_id):
-    print(f"/api/bss/resource/subscription/{current_subscription_id}/seat/{seat_id}?"
-          f"targetSubscription={target_subscription_id}")
     bss_response = make_req(environment, f"/api/bss/resource/subscription/{current_subscription_id}/seat/{seat_id}?"
                                          f"targetSubscription={target_subscription_id}",
                             method="post", headers={"x-operation": "transferSeat"})
