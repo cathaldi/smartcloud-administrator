@@ -3,6 +3,8 @@
 An unofficial python api for helping to administer with IBM Smartcloud
 which supports products like Connections, Sametime and Notes.
 
+Read more on read the docs [here](https://smartcloud-administrator.readthedocs.io/en/latest/).
+
 ## Setup
     pip install smartcloudadmin
 
@@ -21,5 +23,3 @@ Define datacenter credentials
 
     # Create an Organization object for organization id 11111111 on NA
     my_org = Organization.get("NA", "11111111")
-
-More examples and documentation can be found here.
