@@ -6,7 +6,20 @@ Activate any user in a Pending state and set a temporary password
 
 .. code-block:: python
 
-    my_org = Organization.get(1213232)
+    # BSS Config
+    config = BssConfig()
+    config.add_datacenter("NA", "https://apps.na.collabserv.com", (os.environ.get('BSS_USER'), os.environ.get('BSS_PASSWORD')))
+
+Create a datacenter configuration. This is specified when retrieving new objects with the get method.
+Additional Example:
+.. code-block:: python
+
+    Subscription.get("CE", 1234567)
+    Subscriber.get("AP", 7654321)
+
+.. code-block:: python
+
+    my_org = Organization.get("NA", 1234567)
     pending_subscribers = my_org.filter_subscribers(attribute="state", attribute_value="PENDING",passed_operator=operator.eq)
     for subscriber in pending_subscribers:
         subscriber.activate()
@@ -17,18 +30,17 @@ Returns subscribers that were modified within the last 7 days
 -------------------------------------------------------------
 .. code-block:: python
 
-    my_org.filter_subscribers(attribute="modified", attribute_value=LAST_WEEK,passed_operator=operator.ge)
+    recently_modified = my_org.filter_subscribers(attribute="modified", attribute_value=LAST_WEEK,passed_operator=operator.ge)
 
-    for user in my_org.subscribers:
-        if user.state != "PENDING":
-            print(user.email + " : " + user.state)
+Returns subscribers that are currently in a PENDING state and may require attention
+-----------------------------------------------------------------------------------
+.. code-block:: python
 
-    this could also be done with a filter
-    my_org.filter_subscribers(attribute="state", attribute_value="PENDING",passed_operator=operator.ge)
+    my_org.filter_subscribers(attribute="state", attribute_value="PENDING",passed_operator=operator.eq)
 
 
-Create an organisation, add Connections S2 and ICEC subscriptions
------------------------------------------------------------------
+Create an organisation, add Connections S2 and activate users with a password
+-----------------------------------------------------------------------------
 .. code-block:: python
 
     org = Organization.create("A3", "Neat_new_company", "admin_email@ibm.com", "John", "Smith")
@@ -52,10 +64,3 @@ Create an organisation, add Connections S2 and ICEC subscriptions
     admin.change_password("temp_password123", "final_password123")
 
 
-Get print each user in an org in the format username, city
-----------------------------------------------------------
-.. code-block:: python
-
-    for subscriber_id,subscriber in org.subscribers.items():
-        f = open("user_list .txt", "a")
-        f.write(f"{subscriber.email},Pa88w0rd\n")
