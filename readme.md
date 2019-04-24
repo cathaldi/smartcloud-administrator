@@ -2,9 +2,10 @@
 
 An unofficial python api for helping to administer with IBM Smartcloud
 which supports products like Connections, Sametime and Notes.
-Library is based on [BSS API documentation](https://www-10.lotus.com/ldd/appdevwiki.nsf/xpAPIViewer.xsp?lookupName=API+Reference)
 
-Read more on read the docs [here](https://smartcloud-administrator.readthedocs.io/en/latest/).
+Package is based on [BSS API documentation](https://www-10.lotus.com/ldd/appdevwiki.nsf/xpAPIViewer.xsp?lookupName=API+Reference)
+
+Package Documentation can be found here on [read the docs](https://smartcloud-administrator.readthedocs.io/en/latest/).
 
 ## Setup
     pip install smartcloudadmin
