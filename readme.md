@@ -29,6 +29,14 @@ Retrieve an Organization
 
     my_organization = Organization.get("NA", 123456)
     
+    print(my_organization.state)
+    >>> ACTIVE
+    
+    print(my_organization.security_realm)
+    >>> FEDERATED
+    
+    print(my_organization.is_guest)
+    >>> False
     
 Add a new user, entitle them and set a one time password
     
