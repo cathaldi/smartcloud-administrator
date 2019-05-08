@@ -17,11 +17,26 @@ Package Documentation can be found here on [read the docs](https://smartcloud-ad
 Define datacenter credentials 
 
     from smartcloudadmin import Organization
-    from smartcloudadmin.bss_config import BssConfig
-
-    # Provide North American data center details and supply user credentials
+    from smartcloudadmin.config import BssConfig
+    import os
+    
     config = BssConfig()
-    config.add_datacenter("NA", "https://apps.na.collabserv.com", (email_address, password))
+    config.add_datacenter("NA", "https://apps.na.collabserv.com", (os.environ.get("BSS_USER"),
+                                                                         os.environ.get("BSS_PASSWORD")))
+                                                                         
 
-    # Create an Organization object for organization id 11111111 on NA
-    my_org = Organization.get("NA", "11111111")
+Retrieve an Organization
+
+    my_organization = Organization.get("NA", 123456)
+    
+    
+Add a new user, entitle them and set a one time password
+    
+    user = my_organization.add_subscriber(email_address="user_1@ibm.com, given_name="John", family_name="Doe")
+    user.entitle(987654)  # Entitle user with subscription id 987654
+    user.set_one_time_password("Test1Test")
+    
+
+Suspend the new user
+    
+    user.suspend()    
