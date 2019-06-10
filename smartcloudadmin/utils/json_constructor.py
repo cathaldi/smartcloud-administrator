@@ -1,5 +1,5 @@
 import json
-
+from pkg_resources import resource_filename
 
 """
 File contains functions to return JSON templates with 
@@ -17,7 +17,8 @@ def register_customer_json(organization_name, contact_given_name, contact_family
                            country="", postcode="",
                            job_title="", time_zone="",
                            address_type="", language_preference=""):
-    data = open('smartcloudadmin/json/register_customer.json')
+    filepath = resource_filename(__name__, '../json/register_customer.json')
+    data = open(filepath)
     string_data = data.read().format(
         org_name=organization_name, contact_family_name=contact_family_name,
         contact_given_name=contact_given_name, contact_email_address=contact_email_address,
@@ -50,7 +51,9 @@ def register_subscriber_json(*, customer_id, email_address, given_name, family_n
     time_zone = kwargs.get('time_zone', "CST")
     photo = kwargs.get('time_zone',  "")
 
-    data = open('smartcloudadmin/json/register_subscriber.json')
+    filepath = resource_filename(__name__, '../json/register_subscriber.json')
+    data = open(filepath)
+    # data = open('smartcloudadmin/json/register_subscriber.json')
     string_data = data.read().format(customer_id=customer_id, family_name=family_name,
                                      given_name=given_name, email_address=email_address,role_set=role_set,
                                      name_prefix=name_prefix,  name_suffix=name_suffix, employee_number=employee_number,
@@ -63,35 +66,45 @@ def register_subscriber_json(*, customer_id, email_address, given_name, family_n
 
 
 def set_one_time_password_json(*, email, temp_password):
-    data = open('smartcloudadmin/json/set_one_time_password.json')
+    filepath = resource_filename(__name__, '../json/set_one_time_password.json')
+    data = open(filepath)
+    # data = open('smartcloudadmin/json/set_one_time_password.json')
     string_data = data.read().format(email_address=email, temp_password=temp_password)
     data.close()
     return json.loads(string_data)
 
 
 def reset_password(*, email, old_password, new_password):
-    data = open('smartcloudadmin/json/change_password.json')
+    filepath = resource_filename(__name__, '../json/change_password.json')
+    # data = open('smartcloudadmin/json/change_password.json')
+    data = open(filepath)
     string_data = data.read().format(email_address=email, old_password=old_password, new_password=new_password)
     data.close()
     return json.loads(string_data)
 
 
 def change_password_json(*, email, old_password, new_password):
-    data = open('smartcloudadmin/json/change_password.json')
+    filepath = resource_filename(__name__, '../json/change_password.json')
+    data = open(filepath)
+    # data = open('smartcloudadmin/json/change_password.json')
     string_data = data.read().format(email_address=email, old_password=old_password, new_password=new_password)
     data.close()
     return json.loads(string_data)
 
 
 def set_user_password_json(*, email, new_password):
-    data = open('smartcloudadmin/json/set_user_password.json')
+    filepath = resource_filename(__name__, '../json/set_user_password.json')
+    data = open(filepath)
+    # data = open('smartcloudadmin/json/set_user_password.json')
     string_data = data.read().format(email_address=email, new_password=new_password)
     data.close()
     return json.loads(string_data)
 
 
 def register_subscription_json(*, duration_units="YEARS", duration_length=1, part_number, part_quantity, customer_id):
-    data = open('smartcloudadmin/json/register_subscription.json')
+    filepath = resource_filename(__name__, '../json/register_subscription.json')
+    data = open(filepath)
+    # data = open('smartcloudadmin/json/register_subscription.json')
     string_data = data.read().format(duration_units=duration_units, duration_length=duration_length,
                                      part_number=part_number, part_quantity=part_quantity, customer_id=customer_id)
     data.close()
