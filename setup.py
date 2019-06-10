@@ -2,12 +2,12 @@ from setuptools import setup
 
 setup(
     name='smartcloudadmin',
-    version='0.7.3',
+    version='0.7.4',
     packages=['smartcloudadmin', 'smartcloudadmin.utils', 'smartcloudadmin.models', 'smartcloudadmin.json'],
     url='https://github.com/cathaldi/smartcloud-administrator',
     include_package_data=True,
     license='apache2',
-    download_url='https://github.com/cathaldi/smartcloud-administrator/releases/download/0.7.3/smartcloudadmin-0.7.3.tar.gz',
+    download_url='https://github.com/cathaldi/smartcloud-administrator/releases/download/0.7.4/smartcloudadmin-0.7.4.tar.gz',
     author='Cathal A. Dinneen',
     install_requires=['requests'],
     author_email='cathal.a.dinneen@gmail.com',
